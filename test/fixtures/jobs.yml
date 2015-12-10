@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  title: 
+  description: MyText
+  number_of_children: 1
+  days_needed: MyString
+  times_needed: MyString
+  city: MyString
+  state: MyString
+  hourly_pay: 1.5
+  is_cpr_certified: false
+  have_pets: false
+
+two:
+  user_id: 1
+  title: 
+  description: MyText
+  number_of_children: 1
+  days_needed: MyString
+  times_needed: MyString
+  city: MyString
+  state: MyString
+  hourly_pay: 1.5
+  is_cpr_certified: false
+  have_pets: false
