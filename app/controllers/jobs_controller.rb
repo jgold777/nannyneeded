@@ -14,7 +14,7 @@ class JobsController < ApplicationController
 
   # GET /jobs/new
   def new
-    @job = Job.new
+    @job = current_user.jobs.new
   end
 
   # GET /jobs/1/edit
@@ -24,7 +24,7 @@ class JobsController < ApplicationController
   # POST /jobs
   # POST /jobs.json
   def create
-    @job = Job.new(job_params)
+    @job = current_user.jobs.new(job_params)
 
     respond_to do |format|
       if @job.save
@@ -69,6 +69,16 @@ class JobsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def job_params
-      params.require(:job).permit(:user_id, :title, :description, :number_of_children, :days_needed, :times_needed, :city, :state, :hourly_pay, :is_cpr_certified, :have_pets)
+      params.require(:job).permit(:user_id, 
+                                  :title, 
+                                  :description, 
+                                  :number_of_children, 
+                                  :days_needed, 
+                                  :times_needed, 
+                                  :city, 
+                                  :state, 
+                                  :hourly_pay, 
+                                  :is_cpr_certified, 
+                                  :have_pets)
     end
 end
