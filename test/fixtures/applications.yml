@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  job_id: MyString
+  integer: MyString
+  first: MyString
+  name: MyString
+  string: MyString
+  Last: MyString
+  name: MyString
+  string: MyString
+  email_address: MyString
+  string: MyString
+  resume: MyString
+  text: MyString
+  days_available: MyString
+  string: MyString
+  times_available: MyString
+  string: MyString
+  pay_requested: MyString
+  float,: MyString
+  CPR_certified: false
+
+two:
+  user_id: 1
+  job_id: MyString
+  integer: MyString
+  first: MyString
+  name: MyString
+  string: MyString
+  Last: MyString
+  name: MyString
+  string: MyString
+  email_address: MyString
+  string: MyString
+  resume: MyString
+  text: MyString
+  days_available: MyString
+  string: MyString
+  times_available: MyString
+  string: MyString
+  pay_requested: MyString
+  float,: MyString
+  CPR_certified: false
