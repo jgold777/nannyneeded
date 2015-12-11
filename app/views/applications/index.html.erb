@@ -7,24 +7,14 @@
     <tr>
       <th>User</th>
       <th>Job</th>
-      <th>Integer</th>
-      <th>First</th>
-      <th>Name</th>
-      <th>String</th>
-      <th>Last</th>
-      <th>Name</th>
-      <th>String</th>
-      <th>Email address</th>
-      <th>String</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email Address</th>
       <th>Resume</th>
-      <th>Text</th>
-      <th>Days available</th>
-      <th>String</th>
-      <th>Times available</th>
-      <th>String</th>
-      <th>Pay requested</th>
-      <th>Float,</th>
-      <th>Cpr certified</th>
+      <th>Days Available</th>
+      <th>Times Available</th>
+      <th>Pay Requested</th>
+      <th>CPR Certified</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -34,24 +24,14 @@
       <tr>
         <td><%= application.user_id %></td>
         <td><%= application.job_id %></td>
-        <td><%= application.integer %></td>
-        <td><%= application.first %></td>
-        <td><%= application.name %></td>
-        <td><%= application.string %></td>
-        <td><%= application.Last %></td>
-        <td><%= application.name %></td>
-        <td><%= application.string %></td>
+        <td><%= application.first_name %></td>
+        <td><%= application.last_name %></td>
         <td><%= application.email_address %></td>
-        <td><%= application.string %></td>
         <td><%= application.resume %></td>
-        <td><%= application.text %></td>
         <td><%= application.days_available %></td>
-        <td><%= application.string %></td>
         <td><%= application.times_available %></td>
-        <td><%= application.string %></td>
         <td><%= application.pay_requested %></td>
-        <td><%= application.float, %></td>
-        <td><%= application.CPR_certified %></td>
+        <td><%= application.cpr_certified %></td>
         <td><%= link_to 'Show', application %></td>
         <td><%= link_to 'Edit', edit_application_path(application) %></td>
         <td><%= link_to 'Destroy', application, method: :delete, data: { confirm: 'Are you sure?' } %></td>
