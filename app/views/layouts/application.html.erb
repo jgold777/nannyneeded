@@ -11,6 +11,10 @@
 <h1>  <b> Nanny<i>Needed</i>.com</b></h1>
 </head>
 <body>
+<%= link_to "Jobs", jobs_path %>
+<%= link_to "Applications", applications_path %>
+<%= link_to "Posts", posts_path %>
+
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 <% if user_signed_in? %>
