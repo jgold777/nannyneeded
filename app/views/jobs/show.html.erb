@@ -39,7 +39,13 @@
   <strong>State:</strong>
   <%= @job.state %>
 </p>
+<p>
+  <strong>Map</strong>
+  <%= @job.latitude %>
+  <%= @job.longitude %>
 
+</p>
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@job.latitude}%2C#{@job.longitude}" %>
 <p>
   <strong>Hourly pay:</strong>
   <%= @job.hourly_pay %>

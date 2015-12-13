@@ -14,7 +14,7 @@ class ApplicationsController < ApplicationController
 
   # GET /applications/new
   def new
-    @application = Application.new
+    @application = current_user.applications.new
   end
 
   # GET /applications/1/edit
@@ -24,7 +24,7 @@ class ApplicationsController < ApplicationController
   # POST /applications
   # POST /applications.json
   def create
-    @application = Application.new(application_params)
+     @application = current_user.applications.new(application_params)
 
     respond_to do |format|
       if @application.save
