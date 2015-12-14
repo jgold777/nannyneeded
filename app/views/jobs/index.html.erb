@@ -30,7 +30,7 @@
         <td><%= job.times_needed %></td>
         <td><%= job.city %></td>
         <td><%= job.state %></td>
-        <td><%= job.hourly_pay %></td>
+        <td><%= number_to_currency(job.hourly_pay) %></td>
         <td><%= job.is_cpr_certified %></td>
         <td><%= job.have_pets %></td>
         <td><%= link_to 'Show', job, class: "btn btn-default" %></td>

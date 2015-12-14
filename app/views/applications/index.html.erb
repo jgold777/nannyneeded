@@ -30,7 +30,7 @@
         <td><%= application.resume %></td>
         <td><%= application.days_available %></td>
         <td><%= application.times_available %></td>
-        <td><%= application.pay_requested %></td>
+        <td><%= number_to_currency(application.pay_requested) %></td>
         <td><%= application.cpr_certified %></td>
                 <td><%= link_to 'Show', application, class: "btn btn-default" %></td>
         <td><%= link_to 'Edit', edit_application_path(application), class: "btn btn-default" %></td>
