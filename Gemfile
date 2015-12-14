@@ -5,7 +5,10 @@ gem 'devise'
 gem 'geocoder'
 gem 'ancestry'
 gem 'intercom-rails'
-gem 'pg'
+gem 'font-awesome-rails'
+group :production do
+	gem 'pg'
+end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
