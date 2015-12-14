@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
-
-<h1>Listing Jobs</h1>
 <<table class="table table-striped">
+<h1>Listing Jobs</h1>
+
   <thead>
     <tr>
       <th>User</th>
@@ -33,9 +33,9 @@
         <td><%= job.hourly_pay %></td>
         <td><%= job.is_cpr_certified %></td>
         <td><%= job.have_pets %></td>
-        <td><%= link_to 'Show', job %></td>
-        <td><%= link_to 'Edit', edit_job_path(job) %></td>
-        <td><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', job, class: "btn btn-default" %></td>
+        <td><%= link_to 'Edit', edit_job_path(job), class: "btn btn-default" %></td>
+        <td><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-warning" %></td>
       </tr>
     <% end %>
   </tbody>

@@ -8,12 +8,12 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-<h1>  <b> Nanny<i>Needed</i>.com</b></h1>
+<h1>  <b> Nanny<i style="color:orange;">Needed</i>.com</b></h1>
 </head>
 <body>
-<%= link_to "Jobs", jobs_path %>
-<%= link_to "Applications", applications_path %>
-<%= link_to "Posts", posts_path %>
+<%= link_to "Jobs", jobs_path, class: "btn btn-default" %>
+<%= link_to "Applications", applications_path,class: "btn btn-default" %>
+<%= link_to "Posts", posts_path, class: "btn btn-default" %>
 
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>

@@ -2,7 +2,7 @@
 
 <h1>Listing Applications</h1>
 
-<table>
+<<table class="table table-striped">
   <thead>
     <tr>
       <th>User</th>
@@ -32,9 +32,9 @@
         <td><%= application.times_available %></td>
         <td><%= application.pay_requested %></td>
         <td><%= application.cpr_certified %></td>
-        <td><%= link_to 'Show', application %></td>
-        <td><%= link_to 'Edit', edit_application_path(application) %></td>
-        <td><%= link_to 'Destroy', application, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                <td><%= link_to 'Show', application, class: "btn btn-default" %></td>
+        <td><%= link_to 'Edit', edit_application_path(application), class: "btn btn-default" %></td>
+        <td><%= link_to 'Destroy', application, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-warning" %></td>
       </tr>
     <% end %>
   </tbody>

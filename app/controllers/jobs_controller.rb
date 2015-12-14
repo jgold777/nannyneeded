@@ -79,6 +79,8 @@ class JobsController < ApplicationController
                                   :state, 
                                   :hourly_pay, 
                                   :is_cpr_certified, 
-                                  :have_pets)
+                                  :have_pets,
+                                  :latitude,
+                                  :longitude)
     end
 end

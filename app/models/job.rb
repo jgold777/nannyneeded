@@ -4,9 +4,6 @@ class Job < ActiveRecord::Base
 	belongs_to :user
 	has_many :applications
 	validates_presence_of :title, :description, :city, :state, :hourly_pay
-
-	geocoded_by :city_state
-	after_validation :geocode
 	
 	def city_state
      "#{city}, #{state}"
