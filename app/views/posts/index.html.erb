@@ -20,6 +20,7 @@
         <td><%= post.content %></td>
         <td><%= link_to 'Show', post, class: "btn btn-default" %></td>
         <td><%= link_to 'Edit', edit_post_path(post), class: "btn btn-default" %></td>
+        <td><%= link_to "Reply", new_post_path(:parent_id =>post), class: "btn btn-default" %>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-warning" %></td>
       </tr>
     <% end %>
